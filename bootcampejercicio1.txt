@@ -1,0 +1,61 @@
+     
+PRIMERA PARTE DEL EJERCICIO  
+
+ public static void main(String[] args) {
+
+        int num1 = 5;
+        int num2 = 7;
+        int num3 = 4;
+        int resultado = sumar(num1, num2, num3);
+        System.out.println("La suma de " + num1 + " , " + num2 + " y " + num3 + " da como resultado : " + resultado);
+    }
+
+    public static int sumar(int a, int b, int c) {
+        int suma = a + b + c;
+        return suma;
+       
+    }
+    
+}
+
+
+PARTE DOS DEL EJERCICIO
+
+/**
+ CREE UNA CLASE COCHE CON SUS ATRIBUTOS
+ */
+public class Coche {
+    
+    private int numPuertas;
+
+    // Constructor de la clase Coche
+    public Coche(int numPuertas) {
+        this.numPuertas = numPuertas;
+    }
+
+    // Función para incrementar el número de puertas
+    public void incrementarPuertas() {
+        numPuertas++;
+    }
+
+    // Función para obtener el número de puertas
+    public int getNumPuertas() {
+        return numPuertas;
+    }
+}
+
+public class JavaApplication19 {
+
+    /**
+     EN EL MAIN CREE UN OBJETO DE LA CLASE COCHE PARA PODER ACCEDER A SUS ATRIBUTOS Y ASI PODER SUMARLE UNA PUERTA COMO PIDE EL EJERCICIO
+DESPUES CON UN SOUT MUESTRO POR PANTALLA EL RESULTADO
+     */
+    public static void main(String[] args) {
+        Coche micoche = new Coche(4);
+        System.out.println("Mi coche tiene " + micoche.getNumPuertas() + " puertas");
+        micoche.incrementarPuertas();
+        System.out.println("Si le sumamos una puerta va a tener " + micoche.getNumPuertas());
+    }
+
+}
+
